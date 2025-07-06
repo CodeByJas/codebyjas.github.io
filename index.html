@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i love Sam <3</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #ff6b6b;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s ease;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .cat-gif {
+            display: block;
+            margin: 20px auto;
+            max-width: 200px;
+            border-radius: 10px;
+        }
+        .heart {
+            color: #ff6b6b;
+            display: inline-block;
+            animation: pulse 1s infinite alternate;
+        }
+        @keyframes pulse {
+            to { transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>AHAHAHAHAHAHA, ILOVEYOU PO <span class="heart">❤</span></h1>
+    <p>Good evening, Sam. I just wanted to say something that’s been on my mind lately. But before anything else, I hope you’re safe, at peace, and feeling okay wherever you are right now.</p>
+
+    <p>I just want to be honest… I like you, Sam.</p>
+
+    <p>From the very first day you transferred to our section, na-attract na agad ako sa’yo. Ang ganda mo, ang talino mo, and ang saya mo kasama. Every time you speak during recitation or present in front of the class, I can’t help but be impressed. Ang confident mo, ang galing mo magsalita, and honestly, it inspires me.</p>
+
+    <p>Simula noon, naging mas ganado ako sa school. Hindi dahil gusto kong magpasikat, pero dahil gusto kong sabayan 'yung level mo. Kahit hindi tayo ganun kadalas mag-usap, every interaction with you sticks with me.</p>
+
+    <p>Hindi ko alam kung napapansin mo, pero I really appreciate your presence. And habang tumatagal, mas gusto pa kitang makilala. Mas makausap.</p>
+
+    <p>I know this might come as a surprise, and maybe things might feel a little different after this. But I hope it doesn’t ruin our friendship or make anything awkward between us. If you like someone else or may crush ka na ngayon, I completely understand—walang problema 'yon sa akin. I’m not saying this because I expect something in return. I just wanted to let it out, para walang regrets.</p>
+
+    <p>So there it is. Totoo ‘to, Sam. I like you. I hope someday, I get the chance to know you more—not just as a classmate, but as someone I truly admire.</p>
+</div>
+
+<script>
+    // Make paragraphs appear one by one
+    document.addEventListener('DOMContentLoaded', () => {
+        const paragraphs = document.querySelectorAll('p');
+        paragraphs.forEach((p, i) => {
+            setTimeout(() => {
+                p.classList.add('show');
+            }, i * 500);
+        });
+        
+        // Add mouseover effect for cat gifs
+        const cats = document.querySelectorAll('.cat-gif');
+        cats.forEach(cat => {
+            cat.addEventListener('mouseover', () => {
+                cat.style.transform = 'scale(1.1)';
+            });
+            cat.addEventListener('mouseout', () => {
+                cat.style.transform = 'scale(1)';
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
